@@ -1,0 +1,128 @@
+br {
+	clear: both;
+}
+
+a, a:link, a:visited {
+  color: #f5c400;
+  text-decoration: none;
+}
+
+a:hover {
+color: #f5c400;
+text-decoration: underline;
+}
+
+#patchnotes {
+	background: #000000;
+}
+
+
+#patchnotes #container {
+	font-size: 15px;
+	position: relative;
+	margin-left: 20px;
+}
+
+#patchnotes table {
+	width:308px;
+}
+
+#patchnotes .header {
+	position: relative;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #EDEBEC;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+#patchnotes .header .gameName {
+	font-size: 1.2em;
+	font-family: "Trebuchet MS", Verdana;
+	font-weight: bold;
+	color: #EDEBEC;
+	border-bottom: 1px solid #EDEBEC;
+	margin-top: 20px;
+}
+
+#patchnotes .description {
+	position: relative;
+	/*width: 100%;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	color: #EDEBEC;
+	margin: 0px 0px 20px;
+}
+
+#patchnotes .category {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #EDEBEC;
+	border-bottom: 1px solid #EDEBEC;
+	margin-top: 20px;
+}
+
+#patchnotes .section {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: italic;
+	color: #EDEBEC;
+	margin: 20px 0px 10px;
+}
+
+#patchnotes .career {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .9em;
+	font-weight: bold;
+	font-style: italic;
+	color: #EDEBEC;
+	margin: 20px 0px 10px;
+}
+
+
+#patchnotes .subsection {
+	position: relative;
+	/*width: 100%;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	color: #EDEBEC;
+	margin-top: 10px;
+	font-weight:bold;
+}
+
+#patchnotes .comment {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	font-style: normal;
+	color: #EDEBEC;
+	margin: 20px 0px;
+}
+
+#patchnotes .item {
+	position: relative;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	color: #EDEBEC;
+	text-indent: -1.3ex;
+	margin-left: 28px;
+	margin-top: 3px;
+}
+
+#patchnotes .subitem {
+	position: relative;
+	font-family: "Trebuchet MS", Verdana;
+	color: #EDEBEC;
+	text-indent: -1.3ex;
+	margin-left:20px;
+}

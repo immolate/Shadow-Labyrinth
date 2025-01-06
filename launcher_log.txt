@@ -1,0 +1,493 @@
+﻿14:27:23 |  TRACE  | 
+================= ClassicUO Launcher Log =================
+-OS: windows
+-description: Microsoft Windows 10.0.17134
+-arch: X64
+-processArch: X64
+-args: "D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUOLauncher.exe"
+
+14:27:23 |  TRACE  | setup FNA env vars
+14:27:23 |  TRACE  | starting to load settings
+14:27:23 |  TRACE  | getting special folder path
+14:27:23 |  TRACE  | appdata path: C:\Users\gomch\AppData\Roaming
+14:27:23 |  TRACE  | settings path: C:\Users\gomch\AppData\Roaming\ClassicUOLauncher\launcher_settings.xml
+14:27:23 |  TRACE  | loading settings in: C:\Users\gomch\AppData\Roaming\ClassicUOLauncher\launcher_settings.xml
+14:27:23 |  TRACE  | done
+14:27:23 |  TRACE  | setup FNA logger functions
+14:27:23 |  TRACE  | creating the engine
+14:27:23 |  TRACE  | SDL backend creation...
+14:27:23 |  TRACE  | SDL backend created.
+14:27:23 |  TRACE  | running the engine!
+14:27:23 |  TRACE  | FNA3D Driver: D3D11
+14:27:23 |  TRACE  | D3D11 Adapter: Intel(R) HD Graphics 500
+14:27:23 |  TRACE  | ImGui renderer creation...
+14:27:23 |  TRACE  | ImGui adding custom font
+14:27:23 |  TRACE  | ImGui adding VarelaRound-Regular.ttf
+14:27:23 |  TRACE  | ImGui adding icons
+14:27:23 |  TRACE  | ImGui building font atlas
+14:27:23 |  TRACE  | fonts correctly built
+14:27:23 |  TRACE  | ImGui setting style
+14:27:23 |  TRACE  | discovering plugins...
+14:27:23 |  TRACE  | plugins path do not exists. I make a new one
+14:27:23 |  TRACE  | downloading manifest...
+14:27:23 |  TRACE  | check launcher patch available
+14:27:23 |  TRACE  | downloading manifest...
+14:27:23 |  TRACE  | loading manifest xml
+14:27:23 |  TRACE  | manifest loaded
+14:27:23 |  TRACE  | check if update is needed
+14:27:23 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Accessibility.dll
+14:27:23 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO
+14:27:23 |  TRACE  | loading manifest xml
+14:27:23 |  TRACE  | manifest loaded
+14:27:23 |  TRACE  | check launcher path: D:\UOAlive Main\UOAlive 7.0.102.3
+14:27:23 |  TRACE  | check if update is needed
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll.config
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.osx
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64.debug
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe.config
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll.config
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll.config
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll.config
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\cuoapi.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll.config
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFAudio.so.0
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFNA3D.so.0
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libSDL2-2.0.so.0
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libtheorafile.so
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.Bcl.AsyncInterfaces.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.CSharp.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Posix.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Security.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monoconfig
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monomachineconfig
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.pdb
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\mscorlib.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFAudio.0.dylib
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFNA3D.0.dylib
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libMoltenVK.dylib
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libSDL2-2.0.0.dylib
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libtheorafile.dylib
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libvulkan.1.dylib
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Buffers.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Configuration.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Core.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Data.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Drawing.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.FileSystem.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Memory.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.Vectors.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.CompilerServices.Unsafe.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.Serialization.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Security.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Encodings.Web.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Json.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Threading.Tasks.Extensions.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.ValueTuple.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Windows.Forms.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.Linq.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\vulkan/icd.d/MoltenVK_icd.json
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FAudio.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FNA3D.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/libtheorafile.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/SDL2.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/vcruntime140.dll
+14:27:24 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/zlib.dll
+14:27:24 |  TRACE  | update needed
+14:27:24 |  TRACE  | done
+14:27:24 |  TRACE  | adding preset: UO: Felucca
+14:27:24 |  TRACE  | adding preset: Eclipse
+14:27:24 |  TRACE  | adding preset: OSI
+14:27:24 |  TRACE  | adding preset: Utopia
+14:27:24 |  TRACE  | adding preset: UOAlive
+14:27:24 |  TRACE  | adding preset: LegenD
+14:27:24 |  TRACE  | adding preset: Millenia
+14:27:24 |  TRACE  | adding preset: Elemental
+14:27:24 |  TRACE  | adding preset: Heritage
+14:27:24 |  TRACE  | no update needed
+14:27:26 |  TRACE  | downloading manifest...
+14:27:26 |  TRACE  | loading manifest xml
+14:27:26 |  TRACE  | manifest loaded
+14:27:26 |  TRACE  | check if update is needed
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Accessibility.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.osx
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64.debug
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\cuoapi.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFAudio.so.0
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFNA3D.so.0
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libSDL2-2.0.so.0
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libtheorafile.so
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.Bcl.AsyncInterfaces.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.CSharp.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Posix.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Security.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monoconfig
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monomachineconfig
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\mscorlib.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFAudio.0.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFNA3D.0.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libMoltenVK.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libSDL2-2.0.0.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libtheorafile.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libvulkan.1.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Buffers.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Configuration.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Core.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Data.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Drawing.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.FileSystem.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Memory.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.Vectors.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.CompilerServices.Unsafe.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.Serialization.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Security.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Encodings.Web.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Json.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Threading.Tasks.Extensions.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.ValueTuple.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Windows.Forms.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.Linq.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\vulkan/icd.d/MoltenVK_icd.json
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FAudio.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FNA3D.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/libtheorafile.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/SDL2.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/vcruntime140.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/zlib.dll
+14:27:26 |  TRACE  | update needed
+14:27:26 |  TRACE  | check if update is needed
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Accessibility.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.osx
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64.debug
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\cuoapi.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll.config
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFAudio.so.0
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFNA3D.so.0
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libSDL2-2.0.so.0
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libtheorafile.so
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.Bcl.AsyncInterfaces.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.CSharp.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Posix.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Security.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monoconfig
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monomachineconfig
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.pdb
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\mscorlib.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFAudio.0.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFNA3D.0.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libMoltenVK.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libSDL2-2.0.0.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libtheorafile.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libvulkan.1.dylib
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Buffers.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Configuration.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Core.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Data.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Drawing.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.FileSystem.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Memory.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.Vectors.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.CompilerServices.Unsafe.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.Serialization.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Security.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Encodings.Web.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Json.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Threading.Tasks.Extensions.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.ValueTuple.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Windows.Forms.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.Linq.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\vulkan/icd.d/MoltenVK_icd.json
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FAudio.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FNA3D.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/libtheorafile.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/SDL2.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/vcruntime140.dll
+14:27:26 |  TRACE  | file does not exists --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/zlib.dll
+14:27:26 |  TRACE  | update needed
+14:27:26 |  TRACE  | searching for cuo modules
+14:27:26 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Accessibility.dll
+14:27:26 |  TRACE  | sending GET file request
+14:27:26 |  TRACE  | Status code from response: OK
+14:27:26 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO
+14:27:26 |  TRACE  | sending GET file request
+14:27:26 |  TRACE  | Status code from response: OK
+14:27:26 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll
+14:27:26 |  TRACE  | sending GET file request
+14:27:26 |  TRACE  | Status code from response: OK
+14:27:27 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.dll.config
+14:27:27 |  TRACE  | sending GET file request
+14:27:27 |  TRACE  | Status code from response: OK
+14:27:27 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Assets.pdb
+14:27:27 |  TRACE  | sending GET file request
+14:27:27 |  TRACE  | Status code from response: OK
+14:27:27 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.osx
+14:27:27 |  TRACE  | sending GET file request
+14:27:27 |  TRACE  | Status code from response: OK
+14:27:28 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64
+14:27:28 |  TRACE  | sending GET file request
+14:27:28 |  TRACE  | Status code from response: OK
+14:27:28 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.bin.x86_64.debug
+14:27:28 |  TRACE  | sending GET file request
+14:27:28 |  TRACE  | Status code from response: OK
+14:27:34 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe
+14:27:34 |  TRACE  | sending GET file request
+14:27:34 |  TRACE  | Status code from response: OK
+14:27:35 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.exe.config
+14:27:35 |  TRACE  | sending GET file request
+14:27:35 |  TRACE  | Status code from response: OK
+14:27:35 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll
+14:27:35 |  TRACE  | sending GET file request
+14:27:35 |  TRACE  | Status code from response: OK
+14:27:36 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.dll.config
+14:27:36 |  TRACE  | sending GET file request
+14:27:36 |  TRACE  | Status code from response: OK
+14:27:36 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.IO.pdb
+14:27:36 |  TRACE  | sending GET file request
+14:27:36 |  TRACE  | Status code from response: OK
+14:27:36 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.pdb
+14:27:36 |  TRACE  | sending GET file request
+14:27:36 |  TRACE  | Status code from response: OK
+14:27:37 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll
+14:27:37 |  TRACE  | sending GET file request
+14:27:37 |  TRACE  | Status code from response: OK
+14:27:37 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.dll.config
+14:27:37 |  TRACE  | sending GET file request
+14:27:37 |  TRACE  | Status code from response: OK
+14:27:37 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Renderer.pdb
+14:27:37 |  TRACE  | sending GET file request
+14:27:37 |  TRACE  | Status code from response: OK
+14:27:37 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll
+14:27:37 |  TRACE  | sending GET file request
+14:27:37 |  TRACE  | Status code from response: OK
+14:27:38 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.dll.config
+14:27:38 |  TRACE  | sending GET file request
+14:27:38 |  TRACE  | Status code from response: OK
+14:27:38 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\ClassicUO.Utility.pdb
+14:27:38 |  TRACE  | sending GET file request
+14:27:38 |  TRACE  | Status code from response: OK
+14:27:38 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\cuoapi.dll
+14:27:38 |  TRACE  | sending GET file request
+14:27:38 |  TRACE  | Status code from response: OK
+14:27:38 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll
+14:27:38 |  TRACE  | sending GET file request
+14:27:38 |  TRACE  | Status code from response: OK
+14:27:38 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.dll.config
+14:27:38 |  TRACE  | sending GET file request
+14:27:38 |  TRACE  | Status code from response: OK
+14:27:38 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\FNA.pdb
+14:27:38 |  TRACE  | sending GET file request
+14:27:38 |  TRACE  | Status code from response: OK
+14:27:39 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFAudio.so.0
+14:27:39 |  TRACE  | sending GET file request
+14:27:39 |  TRACE  | Status code from response: OK
+14:27:39 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libFNA3D.so.0
+14:27:39 |  TRACE  | sending GET file request
+14:27:39 |  TRACE  | Status code from response: OK
+14:27:39 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libSDL2-2.0.so.0
+14:27:39 |  TRACE  | sending GET file request
+14:27:39 |  TRACE  | Status code from response: OK
+14:27:40 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\lib64/libtheorafile.so
+14:27:40 |  TRACE  | sending GET file request
+14:27:40 |  TRACE  | Status code from response: OK
+14:27:40 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.Bcl.AsyncInterfaces.dll
+14:27:40 |  TRACE  | sending GET file request
+14:27:40 |  TRACE  | Status code from response: OK
+14:27:40 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Microsoft.CSharp.dll
+14:27:40 |  TRACE  | sending GET file request
+14:27:40 |  TRACE  | Status code from response: OK
+14:27:41 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Posix.dll
+14:27:41 |  TRACE  | sending GET file request
+14:27:41 |  TRACE  | Status code from response: OK
+14:27:42 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\Mono.Security.dll
+14:27:42 |  TRACE  | sending GET file request
+14:27:42 |  TRACE  | Status code from response: OK
+14:27:42 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monoconfig
+14:27:42 |  TRACE  | sending GET file request
+14:27:42 |  TRACE  | Status code from response: OK
+14:27:42 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\monomachineconfig
+14:27:42 |  TRACE  | sending GET file request
+14:27:43 |  TRACE  | Status code from response: OK
+14:27:43 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.dll
+14:27:43 |  TRACE  | sending GET file request
+14:27:43 |  TRACE  | Status code from response: OK
+14:27:43 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\MP3Sharp.pdb
+14:27:43 |  TRACE  | sending GET file request
+14:27:43 |  TRACE  | Status code from response: OK
+14:27:43 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\mscorlib.dll
+14:27:43 |  TRACE  | sending GET file request
+14:27:43 |  TRACE  | Status code from response: OK
+14:27:46 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFAudio.0.dylib
+14:27:46 |  TRACE  | sending GET file request
+14:27:46 |  TRACE  | Status code from response: OK
+14:27:46 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libFNA3D.0.dylib
+14:27:46 |  TRACE  | sending GET file request
+14:27:46 |  TRACE  | Status code from response: OK
+14:27:46 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libMoltenVK.dylib
+14:27:46 |  TRACE  | sending GET file request
+14:27:46 |  TRACE  | Status code from response: OK
+14:27:50 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libSDL2-2.0.0.dylib
+14:27:50 |  TRACE  | sending GET file request
+14:27:50 |  TRACE  | Status code from response: OK
+14:27:50 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libtheorafile.dylib
+14:27:50 |  TRACE  | sending GET file request
+14:27:50 |  TRACE  | Status code from response: OK
+14:27:51 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\osx/libvulkan.1.dylib
+14:27:51 |  TRACE  | sending GET file request
+14:27:51 |  TRACE  | Status code from response: OK
+14:27:51 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Buffers.dll
+14:27:51 |  TRACE  | sending GET file request
+14:27:51 |  TRACE  | Status code from response: OK
+14:27:51 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Configuration.dll
+14:27:51 |  TRACE  | sending GET file request
+14:27:51 |  TRACE  | Status code from response: OK
+14:27:52 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Core.dll
+14:27:52 |  TRACE  | sending GET file request
+14:27:52 |  TRACE  | Status code from response: OK
+14:27:53 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Data.dll
+14:27:53 |  TRACE  | sending GET file request
+14:27:53 |  TRACE  | Status code from response: OK
+14:27:54 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.dll
+14:27:54 |  TRACE  | sending GET file request
+14:27:54 |  TRACE  | Status code from response: OK
+14:27:56 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Drawing.dll
+14:27:56 |  TRACE  | sending GET file request
+14:27:56 |  TRACE  | Status code from response: OK
+14:27:56 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.dll
+14:27:56 |  TRACE  | sending GET file request
+14:27:56 |  TRACE  | Status code from response: OK
+14:27:57 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.IO.Compression.FileSystem.dll
+14:27:57 |  TRACE  | sending GET file request
+14:27:57 |  TRACE  | Status code from response: OK
+14:27:57 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Memory.dll
+14:27:57 |  TRACE  | sending GET file request
+14:27:57 |  TRACE  | Status code from response: OK
+14:27:57 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.dll
+14:27:57 |  TRACE  | sending GET file request
+14:27:57 |  TRACE  | Status code from response: OK
+14:27:58 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Numerics.Vectors.dll
+14:27:58 |  TRACE  | sending GET file request
+14:27:58 |  TRACE  | Status code from response: OK
+14:27:58 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.CompilerServices.Unsafe.dll
+14:27:58 |  TRACE  | sending GET file request
+14:27:58 |  TRACE  | Status code from response: OK
+14:27:58 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Runtime.Serialization.dll
+14:27:58 |  TRACE  | sending GET file request
+14:27:58 |  TRACE  | Status code from response: OK
+14:27:59 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Security.dll
+14:27:59 |  TRACE  | sending GET file request
+14:27:59 |  TRACE  | Status code from response: OK
+14:28:00 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Encodings.Web.dll
+14:28:00 |  TRACE  | sending GET file request
+14:28:00 |  TRACE  | Status code from response: OK
+14:28:00 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Text.Json.dll
+14:28:00 |  TRACE  | sending GET file request
+14:28:00 |  TRACE  | Status code from response: OK
+14:28:01 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Threading.Tasks.Extensions.dll
+14:28:01 |  TRACE  | sending GET file request
+14:28:01 |  TRACE  | Status code from response: OK
+14:28:01 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.ValueTuple.dll
+14:28:01 |  TRACE  | sending GET file request
+14:28:01 |  TRACE  | Status code from response: OK
+14:28:02 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Windows.Forms.dll
+14:28:02 |  TRACE  | sending GET file request
+14:28:02 |  TRACE  | Status code from response: OK
+14:28:03 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.dll
+14:28:03 |  TRACE  | sending GET file request
+14:28:03 |  TRACE  | Status code from response: OK
+14:28:05 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\System.Xml.Linq.dll
+14:28:05 |  TRACE  | sending GET file request
+14:28:05 |  TRACE  | Status code from response: OK
+14:28:06 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\vulkan/icd.d/MoltenVK_icd.json
+14:28:06 |  TRACE  | sending GET file request
+14:28:06 |  TRACE  | Status code from response: OK
+14:28:06 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FAudio.dll
+14:28:06 |  TRACE  | sending GET file request
+14:28:06 |  TRACE  | Status code from response: OK
+14:28:06 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/FNA3D.dll
+14:28:06 |  TRACE  | sending GET file request
+14:28:06 |  TRACE  | Status code from response: OK
+14:28:07 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/libtheorafile.dll
+14:28:07 |  TRACE  | sending GET file request
+14:28:07 |  TRACE  | Status code from response: OK
+14:28:07 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/SDL2.dll
+14:28:07 |  TRACE  | sending GET file request
+14:28:07 |  TRACE  | Status code from response: OK
+14:28:08 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/vcruntime140.dll
+14:28:08 |  TRACE  | sending GET file request
+14:28:08 |  TRACE  | Status code from response: OK
+14:28:08 |  TRACE  | getting file and storing it to --> D:\UOAlive Main\UOAlive 7.0.102.3\ClassicUO\x64/zlib.dll
+14:28:08 |  TRACE  | sending GET file request
+14:28:08 |  TRACE  | Status code from response: OK
+14:28:08 |  TRACE  | update done
+14:28:15 |  TRACE  | saving settings in: C:\Users\gomch\AppData\Roaming\ClassicUOLauncher\launcher_settings.xml
+14:28:15 |  TRACE  | done
+14:28:15 |  TRACE  | saving settings in: C:\Users\gomch\AppData\Roaming\ClassicUOLauncher\launcher_settings.xml
+14:28:15 |  TRACE  | done
+14:28:15 |  TRACE  | closing...

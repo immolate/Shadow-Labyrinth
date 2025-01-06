@@ -1,0 +1,21 @@
+# Ignore everything
+
+
+# Allow specific file types
+!*.mul
+!*.uop
+!*.exe
+!shardpatch.xml
+!shardpatch.cs
+
+# Ignore system and IDE-specific files
+*.bak
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+*.user
+*.suo
+.vs/
+bin/
+obj/

@@ -1,0 +1,27 @@
+Instance Id: 0
+
+OS Version: 6.2.9200
+
+CPU Manufacturer: 2
+CPU Family: 6
+CPU Model: 165
+CPU Clock Speed: 2304MHz
+CPU Quantity: 12
+
+Physical Memory: 4096MB
+
+Desktop Resolution and Color Depth: 1920x1080x32
+DirectX Version: 9.0
+Video Card Description: Intel(R) UHD Graphics 630
+Video Card Vendor Id: 32902
+Video Card Device Id: 39880
+Video Card Memory: 136MB
+
+Distribution: 0
+Client Running: 2
+Clients Installed: 6
+Partial Install: no
+
+Language Preference: enu
+
+DVD-ROM drive: no

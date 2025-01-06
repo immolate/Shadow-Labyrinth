@@ -1,0 +1,378 @@
+/* Mythic Entertainment - patcher.css */
+/* ============================================ */
+
+
+/*  Main Site Structure */
+/* ============================================ */
+
+html { height: 100% }
+
+body {
+	background: #000000 url('patcher_bg-tile.jpg') 0px 0px repeat;  /*#1e1e20*/
+	color: #ffffff;
+	font-size: 0.8em;
+	font-family: Trebuchet MS, Arial, Geneva, sans-serif;
+	margin: 0px;
+	padding: 0px;
+
+	/* Original */
+	/*
+	scrollbar-3dlight-color: #171719;
+	scrollbar-arrow-color: #e3a514;
+	scrollbar-base-color: #171719;
+	scrollbar-face-color: #0a0a0b;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-highlight-color: #666666;
+	scrollbar-shadow-color: #333333;
+	scrollbar-track-color: #0e0e10;
+	*/
+
+	/* Test 1 */
+	scrollbar-3dlight-color: #171719;
+	scrollbar-arrow-color: #959595;
+	scrollbar-base-color: #171719;
+	scrollbar-face-color: #0a0a0b;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-highlight-color: #666666;
+	scrollbar-shadow-color: #333333;
+	scrollbar-track-color: #0e0e10;
+
+
+	/* Test 2 */
+	/*
+	scrollbar-3dlight-color: #171719;
+	scrollbar-arrow-color: #760B12;
+	scrollbar-base-color: #171719;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-face-color: #F4EAE3;
+	scrollbar-highlight-color: #666666;
+	scrollbar-shadow-color: #333333;
+	scrollbar-track-color: #0e0e10;
+	*/
+}
+
+img { border: 0px; }
+a img { border: 0px; }
+
+
+#main-container {
+	background: #1e1e20 url('patcher_bg-main.jpg') top center no-repeat;
+	width: 654px;
+	height: 328px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	}
+
+
+
+/*  Patcher Window */
+/* ============================================ */
+
+.patcher-window {
+	width: 384px;
+	height: 307px;
+	position: absolute;
+	top: 9px;
+	left: 13px;
+	color: #fff;
+	}
+
+	.patcher-window .title {
+		width: 384px;
+		height: 22px;
+		text-align: center;
+		margin: 14px auto 0px auto;
+		padding: 0px;
+		font-size: 18px;
+		font-weight: bold;
+		color: #959595;
+		font-family: georgia, geneva, arial, serif;
+		}
+
+	.patcher-window .desc {
+		width: 325px;
+		height: 14px;
+		text-align: center;
+		margin: 1px auto 0px auto;
+		font-size: 10px;
+		color: #666666;
+		}
+
+	.patcher-window .content {
+		position: relative;
+		width: 355px;
+		height: 230px;
+		margin: 0px 0px 0px 5px;
+		padding: 2px 10px 10px 10px;
+		overflow: auto;
+		}
+	.patcher-window .patch_notes_iframe {
+		position: relative;
+		width: 369px;
+		height: 255px;
+		margin: 0px 0px 0px 5px;
+		overflow: auto;
+		background-color: transparent;
+		border: none;
+		visibility: hidden;
+		}
+
+
+/*  Announcements Window */
+/* ============================================ */
+
+.announcement-window {
+	width: 233px;
+	height: 142px;
+	position: absolute;
+	top: 9px;
+	left: 408px;
+	}
+
+	.announcement-window .content {
+		width: 208px;
+		height: 80px;
+		margin: 37px 0px 0px 12px;
+		overflow: hidden;
+		}
+
+	.announcement-window .iframe_content {
+		width: 233px;
+		height: 142px;
+		margin: 37px 0px 0px 0px;
+		background-color: transparent;
+		overflow: hidden;
+		border: none;
+		display: none;
+		visibility: hidden;
+
+		}
+
+
+/*  Marketing Window */
+/* ============================================ */
+
+.ad-window {
+	width: 233px;
+	height: 104px;
+	position: absolute;
+	top: 162px;
+	left: 408px;
+	}
+
+
+/*  Web Links */
+/* ============================================ */
+
+.weblinks-window {
+	width: 233px;
+	height: 40px;
+	position: absolute;
+	top: 275px;
+	left: 408px;
+	}
+
+	.weblinks-window .row1 {
+		width: 233px;
+		height: 15px;
+		margin: 0px 0px 8px 0px;
+		float: left;
+		}
+
+	.weblinks-window .row2 {
+		width: 233px;
+		height: 15px;
+		float: left;
+		}
+
+		.weblinks-window .row1 .button-left, .weblinks-window .row2 .button-left {
+			width: 110px;
+			height: 15px;
+			float: left;
+			background: url('button.jpg') top center no-repeat;
+			text-align: center;
+			color: #959595;
+			margin: 0px;
+			padding: 0px;
+			line-height: 14px;
+			font-size: 12px;
+			}
+
+		.weblinks-window .row1 .button-right, .weblinks-window .row2 .button-right {
+			width: 110px;
+			height: 15px;
+			float: right;
+			background: url('button.jpg') top center no-repeat;
+			text-align: center;
+			color: #959595;
+			margin: 0px;
+			padding: 0px;
+			line-height: 15px;
+			font-size: 12px;
+			}
+
+.weblinks-window a {
+	color: #959595;
+	text-decoration: none;
+	}
+
+	.weblinks-window a:hover {
+		color: #E1E1E1;
+		text-decoration: none;
+		}
+
+
+/* Patch Notes */
+/* ============================================ */
+
+#patchnotes {
+	background: #000000;
+}
+
+#patchnotes br {
+	clear: both;
+}
+
+#patchnotes a, #patchnotes a:link, #patchnotes a:visited {
+  color: #f5c400;
+  text-decoration: none;
+}
+
+#patchnotes a:hover {
+color: #f5c400;
+text-decoration: underline;
+}
+
+
+#patchnotes #container {
+	font-size: 15px;
+	position: relative;
+	margin-left: 20px;
+}
+
+#patchnotes #container table {
+	width:308px;
+}
+
+#patchnotes .header {
+	position: relative;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #EDEBEC;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+
+#patchnotes .header .gameName {
+	font-size: 1.1em;
+	font-family: "Trebuchet MS", Verdana;
+	font-weight: bold;
+	color: #EDEBEC;
+	border-bottom: 1px solid #EDEBEC;
+	margin-top: 20px;
+}
+
+#patchnotes .description {
+	position: relative;
+	/*width: 100%;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	color: #EDEBEC;
+	margin: 0px 0px 20px;
+}
+
+#patchnotes .category {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #EDEBEC;
+	border-bottom: 1px solid #EDEBEC;
+	margin-top: 20px;
+}
+
+#patchnotes .section {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: italic;
+	color: #EDEBEC;
+	margin: 20px 0px 10px;
+}
+
+#patchnotes .career {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .9em;
+	font-weight: bold;
+	font-style: italic;
+	color: #EDEBEC;
+	margin: 20px 0px 10px;
+}
+
+
+#patchnotes .subsection {
+	position: relative;
+	/*width: 100%;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	color: #EDEBEC;
+	margin-top: 10px;
+	font-weight:bold;
+}
+
+#patchnotes .comment {
+	position: relative;
+	/*width: auto;*/
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	font-style: normal;
+	color: #EDEBEC;
+	margin: 20px 0px;
+}
+
+#patchnotes .item {
+	position: relative;
+	font-family: "Trebuchet MS", Verdana;
+	font-size: .8em;
+	color: #EDEBEC;
+	text-indent: -1.3ex;
+	margin-left: 28px;
+	margin-top: 3px;
+}
+
+#patchnotes .subitem {
+	position: relative;
+	font-family: "Trebuchet MS", Verdana;
+	color: #EDEBEC;
+	text-indent: -1.3ex;
+	margin-left:20px;
+}
+.rssfeed {
+	font-family: arial;
+	color: #fff;
+	width: 350px;
+	height: 210px;
+	padding: 15px;
+	overflow-y: scroll;
+}
+	.rssfeed h4 {
+		padding: 0;
+		margin: 0;
+		font-size: 16px;
+	}
+	.rssfeed a {
+		color: #fff;
+		font-weight: bold;
+	}
+.field-name-body {
+	border-bottom: 1px solid #3b3b3b;
+	padding: 0 0 15px 0;
+}

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="Shift-jis"?>
+<?xml-stylesheet type="text/xsl" href="patchnotes.xsl"?>
+<!-- "Ultima Online" &#169; 2009 Electronic Arts Inc. All rights reserved. -->
+
+<patchnotes>
+  <patchnote title="パブリッシュ59" date="2009年7月15日">
+    <category name="不具合の修正">
+      <section name="一般的な修正">
+            <item>
+              一箇所に複数のゲートを召喚しようとした際、エラーメッセージが表示されるようになります。
+            </item>
+            <item>
+              高品質の料理には作成したプレイヤーの名前が記されるようになります。 
+            </item>
+            <item>
+              キャンプファイアが家の設置を妨げることがなくなります。 
+            </item>
+            <item>
+              Crystalline Ringがスキルの補正値を20減少させる問題を修正しました。 
+            </item>
+            <item>
+              犯罪者はペットを預けることができなくなります。 
+            </item>
+            <item>
+              犯罪者が銀行を開こうとした際、エラーメッセージが表示されるようになります。 
+            </item>
+            <item>
+              ベンダーペナルティの問題が修正され、ベンダーにアイテム設置後、25時間以上が経過すると必ずベンダーペナルティが解除されるようになります。 
+            </item>
+            <item>
+              Thomas O’Neerlanが出現地点に固定され、散歩に出かけることがなくなりました。 
+            </item>
+            <item>
+              トリシックからデルシアへ通じる道が修正されました。 
+            </item>
+            <item>
+              犯罪者フラグが立っている時にヘルプスタックを使用すると移動できなくなってしまう問題を修正しました。 
+            </item>
+            <item>
+              解体された家の中にいるペットが、特定の条件下で消滅することがある問題を修正しました。 
+            </item>
+            <item>
+              次の装備品が修理できるようになりました(耐久度がある場合に限る)： Earring、Arcane boots、Elven boots、Bracelet、Necklace、Talisman。 
+            </item>
+            <item>
+              Norton the Fisherのクエストに関する問題が修正されました。 
+            </item>
+            <item>
+              ホリデーツリーの問題を修正し、メンテナンス後に証書に戻ってしまうことがなくなりました。
+            </item>
+      </section>
+      <section name="チャンピオンスポーンとゴーストカメラの修正">
+            <item>
+              ボスが倒されることなく消えた場合に、祭壇がリセットされずに進行が止まってしまうことはなくなります。 
+            </item>
+            <item>
+              チャンピオンスポーンのエリアから影響を受けることなくログアウトすることができなくなります。 
+            </item>
+            <item>
+              チャンピオンスポーンエリア内でログアウトしたプレイヤーは、神殿へ転送されます。 
+            </item>
+            <item>
+              チャンピオンスポーンエリア内でログアウトした際に、装備していない「呪われた」アイテムは、地面に落ちます。 
+            </item>
+            <item>
+              この影響は、10分の猶予時間を過ぎたプレイヤーにのみ発生します。そのため、一時的に回線が切断されたなどの場合には影響を受けません。
+            </item>
+            <item>
+              死体が残っていない幽霊の状態では、チャンピオンスポーンのエリアへ立ち入ったり、ログインすることはできません。 
+            </item>
+            <item>
+              死体の残っていない幽霊は、一定時間後、自動的に排除されます。 
+            </item>
+      </section>
+    </category>
+    <category name="シャドーロードの最終イベントプラン">
+      <section name="概要">
+          <subsection name="陽動">
+            <item>
+              シャドーロードにけしかけられたブリタニアの人々は、徳之諸島で魔物を倒し秘宝探しに夢中になっています。その間、シャドーロードはアーティファクトの捜索に集中できるようになります。無論その秘宝は、人々の気を逸らすためにシャドーロードが魔物に仕込んだものだったのです。 
+            </item>
+          </subsection>
+          <subsection name="謎の人影">
+            <item>
+              預言者（Seer）」と呼ばれる灰色のローブに身を包んだ謎の男たちが、エンパスアビーとライキューム、そしてサーペンツホールドに姿を現します。これらのNPCは未来を予言し、プレイヤーにCloak of CorruptionをCloak of Life, Cloak of DeathまたはCloak of Powerに変換する方法を教えてくれます。 
+            </item>
+            <item>
+              Cloak of Commandが派閥拠点で入手可能になります。
+            </item>
+          </subsection>
+          <subsection name="影の兆候">
+            <item>
+              シャドーロードの兆候が徳之諸島に現れます。他ファセットを荒廃させてから、アーティファクトを捜索するのが狙いです。彼らは半日ごとに、3箇所で姿を現します。倒されると、トップアタッカーの3名がCloak of Corruptionを入手できます。さらに、戦いに参加した全員が徳之諸島の秘宝のマイナーアーティファクトを得られます。 
+            </item>
+          </subsection>
+          <subsection name="希望の夜明け">
+            <item>
+              世界にドーン(Dawn)が戻り、ブリタニアの救済を誓います。 
+            </item>
+            <item>
+              イベントキャラクターからCloak of Silenceを得られます。 
+            </item>
+          </subsection>
+          <subsection name="アーマゲドン">
+            <item>
+              アーティファクトの場所が明らかになります。シャドーロードが動き出し、クリムゾン・ドラゴンがプラチナム･ドラゴンとのブリタニアの支配権をかけた戦いに向け準備を開始します。このプレイヤーが参戦することができる決戦の結末では、混沌の派閥（シャドーロード、ミナックス）と、秩序の派閥、どちらが報酬を手にすることになるのでしょうか？　この決戦は、終わりへの始まりに過ぎません。 
+            </item>
+            <item>
+              シャドーロードとの最終決戦。報酬には三つの「不死の宝珠の破片」(Shard of the Gem of Immortality)（シャドーロード一体につき一つ）とメジャーアーティファクトが与えられます。 
+            </item>
+          </subsection>
+      </section>
+    </category>
+    <category name="イベント報酬アイテム">
+          <subsection name="徳之諸島の秘宝のマイナーアーティファクト"></subsection>
+          <subsection name="Doomのメジャーアーティファクト"></subsection>
+          <subsection name="Cloak of Life">
+            <item>
+              ヒットポイント: 3
+            </item>
+            <item>
+              ヒットポイント回復: 1
+            </item>
+            <item>
+              装備スロットはローブの場所を使います。
+            </item>
+          </subsection>
+          <subsection name="Cloak of Death">
+            <item>
+              命中: 3
+            </item>
+            <item>
+              回避: 3
+            </item>
+            <item>
+              魔法ダメージ: 3
+            </item>
+            <item>
+              装備スロットはローブの場所を使います。
+            </item>
+          </subsection>
+          <subsection name="Cloak of Power">
+            <item>
+              STR: 2
+            </item>
+            <item>
+              DEX: 2
+            </item>
+            <item>
+              INT: 2
+            </item>
+            <item>
+              装備スロットはローブの場所を使います。
+            </item>
+          </subsection>
+          <subsection name="Cloak of Silence">
+            <item>
+              Stealth [隠匿]: +10
+            </item>
+          </subsection>
+          <subsection name="Cloak of Command">
+            <item>
+              派閥用アイテム。必要ランクなし。
+            </item>
+            <item>
+              フェルッカでのみ使用可能。
+            </item>
+            <item>
+              派閥関連モンスターを一日一度のみ召喚。
+            </item>
+            <item>
+              ミナックス: Ogre Lord
+            </item>
+            <item>
+              メイジ評議会: Wisp
+            </item>
+            <item>
+              トゥルー・ブリタニアンズ: Silver Serpent
+            </item>
+            <item>
+              シャドーロード: Daemon
+            </item>
+            <item>
+              召喚生物は1時間出現し続ける。
+            </item>
+            <item>
+              消滅時間はアイテムプロパティに表示される。
+            </item>
+            <item>
+              使用するためには装備必須。
+            </item>
+            <item>
+              召喚生物は、「Summon Creatures」コマンドで命令を出すことができます。詳細は下記の通りです。 
+            </item>
+            <item>
+              コントロールスロットが一つ必要。
+            </item>
+            <item>
+              親愛化や譲渡は不可能。
+            </item>
+            <item>
+              召喚には「Summon Creatures」の魔法と同じ条件（マナ、スキル値、成功率）を満たす必要がありますが、秘薬を消費しません。 
+            </item>
+            <item>
+              召喚したOgre Lordは、通常よりもはるかに弱くなっています。
+            </item>
+          </subsection>
+          <subsection name="不死の宝珠の破片">
+            <item>
+              プレイヤーのカルマに呼応して、世界の中での運命を奏でるかのように動作する高品質のレアアイテム。
+            </item>
+          </subsection>
+    </category>
+  </patchnote>
+</patchnotes>

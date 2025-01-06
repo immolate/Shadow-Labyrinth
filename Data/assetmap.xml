@@ -1,0 +1,56 @@
+<assetmap>
+   <patternmap resourcetype="1" fileFormat="raw" padding="8" directory="../../Runtime/Data/WorldArt/" suffix="*" patternMatch="1" />
+   <patternmap resourcetype="1" fileFormat="packed" padding="8" directory="Build/WorldArt/" suffix=".dds"/>
+   <patternmap resourcetype="2" directory="Data/Maps/" suffix=".dat" />
+   <patternmap resourcetype="3" fileFormat="raw" directory="../../Runtime/Data/Definitions/Terrain/" suffix=".xml" />
+   <patternmap resourcetype="3" fileFormat="packed" directory="Build/TerrainDefinition/" suffix=".bin" />
+   <patternmap resourcetype="5" directory="Data/Statics/" suffix=".dat" />
+   <patternmap resourcetype="6" fileFormat="raw" padding="8" directory="../../Runtime/Data/Definitions/TileArt/" suffix=".tileart" />
+   <patternmap resourcetype="6" fileFormat="packed" padding="8" directory="Build/TileArt/" suffix=".bin" />
+   <patternmap resourcetype="8" padding="8" directory="Data/Textures/" suffix="*" patternMatch="1" />
+   <patternmap resourcetype="8" fileFormat="packed" padding="8" directory="Build/TerrainTexture/" suffix=".dds"/>
+   <bitmaskmap resourcetype="9" fileFormat="raw" directory="../../Runtime/Data/Sectors/" suffix=".sector">
+      <section prefix="Facet_" mask="0x3f" padding="2"/>
+      <section prefix="/" mask="0xffffffc0" padding="8"/>
+   </bitmaskmap>
+   <bitmaskmap resourcetype="9" fileFormat="packed" directory="Build/Sectors/" suffix=".bin">
+      <section prefix="Facet_" mask="0x3f" padding="2"/>
+      <section prefix="/" mask="0xffffffc0" padding="8"/>
+   </bitmaskmap>
+   <patternmap resourcetype="10" padding="8" directory="Data/Definitions/LegacyTerrain/" suffix=".legacyterrain" />
+   <patternmap resourcetype="11" fileFormat="raw" padding="8" directory="../../Runtime/Data/Definitions/Animation/" suffix=".animation" />
+   <patternmap resourcetype="11" fileFormat="packed" padding="8" directory="Build/AnimationDefinition/" suffix=".bin" />
+   <patternmap resourcetype="12" fileFormat="raw" padding="8" directory="../../Runtime/Data/Definitions/Animation/" suffix=".sequence" />
+   <patternmap resourcetype="12" fileFormat="packed" padding="8" directory="Build/AnimationSequence/" suffix=".bin" />
+   <patternmap resourcetype="13" fileFormat="raw" padding="8" directory="../../Runtime/Data/Definitions/Effect/" suffix=".effects" />
+   <patternmap resourcetype="13" fileFormat="packed" padding="8" directory="Build/EffectDefinitionCollection/" suffix=".bin" />
+   <bitmaskmap resourcetype="14" directory="Data/Anim/" suffix=".tga">
+      <section isDirectory="1" patternMatch="1" mask="0xffffc000" padding="6"/>
+      <section isDirectory="1" patternMatch="1" mask="0x3f00" padding="2"/>
+      <section mask="0xff" padding="4"/>
+   </bitmaskmap>
+   <patternmap resourcetype="15" padding="3" directory="Data/LocalizedStrings/" suffix=".cliloc" />
+   <bitmaskmap resourcetype="16" fileFormat="packed" directory="Build/AnimationFrame/" suffix=".bin">
+      <section isDirectory="1" mask="0xffff00" padding="6"/>
+      <section mask="0xff" padding="2"/>
+   </bitmaskmap>
+   <bitmaskmap resourcetype="25" fileFormat="packed" directory="Build/AnimationLegacyFrame/" suffix=".bin">
+      <section isDirectory="1" mask="0xffff00" padding="6"/>
+      <section mask="0xff" padding="2"/>
+   </bitmaskmap>
+   <bitmaskmap resourcetype="18" fileFormat="packed" directory="Build/Paperdoll/" suffix=".bin">
+      <section isDirectory="1" mask="0xffffc0" padding="6"/>
+      <section mask="0x3f" padding="2"/>
+   </bitmaskmap>
+   <patternmap resourcetype="19" fileFormat="raw" padding="6" directory="../../Runtime/Data/Definitions/Multi/" suffix=".multi" />
+   <patternmap resourcetype="19" fileFormat="packed" padding="6" directory="Build/MultiCollection/" suffix=".bin" />
+   <simplemap resourcetype="20" fileFormat="raw" resourcenumber="0" filename="../../Runtime/Data/Definitions/Multi/housing.xml" />
+   <simplemap resourcetype="20" fileFormat="packed" resourcenumber="0" filename="Build/MultiCollection/housing.bin" />
+   <simplemap resourcetype="21" fileFormat="raw" resourcenumber="0" filename="../../Runtime/Data/Sectors/waypoint.xml" />
+   <simplemap resourcetype="21" fileFormat="packed" resourcenumber="0" filename="Build/Sectors/waypoint.bin" />
+   <patternmap resourcetype="22" fileFormat="raw" directory="../../Runtime/Data/TileArtLegacy/" suffix="*" patternMatch="1" />
+   <patternmap resourcetype="22" fileFormat="packed" padding="8" directory="Build/TileArtLegacy/" suffix=".dds"/>
+   <patternmap resourcetype="23" fileFormat="raw" padding="8" directory="../../Runtime/Data/Definitions/Facet/" suffix=".xml" />
+   <patternmap resourcetype="23" fileFormat="packed" padding="8" directory="Build/FacetDefinition/" suffix=".bin" />
+   <patternmap resourcetype="24" fileFormat="raw" padding="8" directory="Editor../../Runtime/Data/BrushMulti/" suffix=".multi" />
+ </assetmap>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Patcher Loader</title>
+
+<script type="text/javascript">
+var pulse_timer;
+var pulse_opacity = 0;
+var pulse_direction = "up";
+var pulse_speed = 50;
+var pulse_increment = 5;
+
+function pulse()
+{
+	if(pulse_direction == "up")
+	{
+		if(pulse_opacity == 100)
+		{
+			pulse_direction = "down";
+			pulse_opacity -= pulse_increment;
+		}
+		else
+		{
+			pulse_opacity += pulse_increment;
+		}
+	}
+	
+	if(pulse_direction == "down")
+	{
+		if(pulse_opacity == 0)
+		{
+			pulse_direction = "up";
+			pulse_opacity += pulse_increment;
+		}
+		else
+		{
+			pulse_opacity -= pulse_increment;
+		}
+	}
+	
+	pulseLayer = document.getElementById("pulse");
+	
+	pulseLayer.style.opacity = pulse_opacity/100;
+	pulseLayer.style.filter = "alpha(opacity='"+pulse_opacity+"')";
+}
+
+function init()
+{
+	pulse_timer = setInterval(pulse,pulse_speed);
+}
+</script>
+
+</head>
+
+<body onLoad="init();">
+	<div style="width:654px;height:328px;">
+		<img id="backdrop" src="UO_dark.jpg" style="position:absolute;top:0px;left:0px;z-index:1;"/>
+        <img id="pulse" src="UO_bright.jpg" style="position:absolute;top:0px;left:0px;z-index:2;opacity:0;filter:alpha(opacity=0);"/>
+    </div>
+</body>
+</html>
