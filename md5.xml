@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MD5Checksums>
-  <File Name=".gitignore.txt" Checksum="ba9b197719f701aee6c95c05e10382a0" />
+  <File Name=".gitattributes" Checksum="9e2022800972f6eb0d49f9ab8efddc6a" />
+  <File Name=".gitignore" Checksum="03d5d3ee0f7f54a3eff78947f3c02d52" />
   <File Name="anim.idx" Checksum="ca8a8f91043a6ad1aea3450d2438f14d" />
   <File Name="anim.mul" Checksum="b1efc293a9e55733e669faf145414bae" />
   <File Name="Anim1.def" Checksum="6c3350fad292dad2c06694b6535a5e10" />
@@ -184,7 +185,8 @@
   <File Name="Intro.kor" Checksum="d36e3505c20ed7b6c506d64831c1d2b5" />
   <File Name="Keynames.txt" Checksum="308f7813ca7eb4a88f5ebb1c9678cead" />
   <File Name="Langcode.iff" Checksum="a950cd21891a103a9cd9ff7a9fe21c08" />
-  <File Name="launcher_log.txt" Checksum="49df2d3b374245699f6e6575a5a46dc7" />
+  <File Name="launcher_log.txt" Checksum="842f6c80bd01b9482a641c3c735e700d" />
+  <File Name="LICENSE" Checksum="e62637ea8a114355b985fd86c9ffbd6e" />
   <File Name="light.mul" Checksum="9fb722f2bd83c3fcb722147b11b765b4" />
   <File Name="lightidx.mul" Checksum="bdd0f41f844b23809ae53e4a58afebde" />
   <File Name="login.cfg" Checksum="5be9f150d89d755fb497fe774a21873d" />
@@ -201,6 +203,7 @@
   <File Name="map4LegacyMUL.uop" Checksum="aa8d01e2aae963bcba673dd05fe1e309" />
   <File Name="map5LegacyMUL.uop" Checksum="6d7172e889992458c294dc2e957f6f08" />
   <File Name="map5xLegacyMUL.uop" Checksum="2783c93711890509bf943a17b446ffc3" />
+  <File Name="md5.xml" Checksum="1ce3702d4da48ba4cf5d517bcb1dd7c0" />
   <File Name="md5generator.cs" Checksum="360861dd336cb6b1c7a7e7bc170fb7a9" />
   <File Name="md5generator.exe" Checksum="e716a51102620d0f933fadea01ba657f" />
   <File Name="metrics.txt" Checksum="49e1022a1c17c96c5b81fa4d4cbb0e62" />
@@ -335,7 +338,7 @@
   <File Name="unifont7.mul" Checksum="4666ec8dd8773edcd1e46dc2879abb3e" />
   <File Name="unifont8.mul" Checksum="8b180cd13fe40b4b68c6d83310b49b05" />
   <File Name="unifont9.mul" Checksum="f4d053e9e7732876ddb659ad27d237b5" />
-  <File Name="UO-patch.cfg" Checksum="0f00f0f89389f248047c463c0261e6f0" />
+  <File Name="UO-patch.cfg" Checksum="5803d2e7f31319966bc47444627e3736" />
   <File Name="uo.bin" Checksum="d841750334708ef1237846ea17a3165b" />
   <File Name="uo.cfg" Checksum="e2de77762c357e9246ebd89932cc6037" />
   <File Name="UO.exe" Checksum="d841750334708ef1237846ea17a3165b" />
