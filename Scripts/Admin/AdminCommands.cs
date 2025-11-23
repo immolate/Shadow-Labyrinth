@@ -381,7 +381,7 @@ public static class AdminCommands
         from.SendMessage($"Server will shutdown in {delay} seconds...");
         BroadcastToAll($"[Server] Server shutting down in {delay} seconds!");
 
-        Timer.Create(TimeSpan.FromSeconds(delay), () =>
+        DelayTimer.Create(TimeSpan.FromSeconds(delay), () =>
         {
             BroadcastToAll("[Server] Server is now shutting down!");
             Console.WriteLine($"[Admin] Server shutdown initiated by {from.Name}");
@@ -398,7 +398,7 @@ public static class AdminCommands
         from.SendMessage($"Server will restart in {delay} seconds...");
         BroadcastToAll($"[Server] Server restarting in {delay} seconds!");
 
-        Timer.Create(TimeSpan.FromSeconds(delay), () =>
+        DelayTimer.Create(TimeSpan.FromSeconds(delay), () =>
         {
             BroadcastToAll("[Server] Server is now restarting!");
             Console.WriteLine($"[Admin] Server restart initiated by {from.Name}");
@@ -593,9 +593,8 @@ public static class AdminCommands
 
         if (int.TryParse(args[0], out var itemId))
         {
-            var item = new Item
+            var item = new Item(itemId)
             {
-                ItemId = itemId,
                 Location = from.Location,
                 Map = from.Map
             };
