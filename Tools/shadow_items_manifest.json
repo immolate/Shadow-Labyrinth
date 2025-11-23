@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "itemId": 20477,
+      "hexId": "0x13FD",
+      "name": "Photon Rifle",
+      "category": "Weapons/Energy",
+      "hue": 1266,
+      "baseGraphic": "Bow",
+      "description": "Futuristic photon rifle with cyan glowing energy chamber"
+    },
+    {
+      "itemId": 3938,
+      "hexId": "0x0F62",
+      "name": "Laser Pistol",
+      "category": "Weapons/Energy",
+      "hue": 1358,
+      "baseGraphic": "Crossbow",
+      "description": "Compact laser pistol with purple energy cell"
+    },
+    {
+      "itemId": 5181,
+      "hexId": "0x143D",
+      "name": "Pulse Hammer",
+      "category": "Weapons/Energy",
+      "hue": 1152,
+      "baseGraphic": "Hammer",
+      "description": "Massive hammer with blue plasma core"
+    },
+    {
+      "itemId": 5046,
+      "hexId": "0x13B6",
+      "name": "Ion Blade",
+      "category": "Weapons/Energy",
+      "hue": 1161,
+      "baseGraphic": "Scimitar",
+      "description": "Curved sword with silver ionic edge"
+    },
+    {
+      "itemId": 3932,
+      "hexId": "0x0F5C",
+      "name": "Graviton Mace",
+      "category": "Weapons/Energy",
+      "hue": 1266,
+      "baseGraphic": "Mace",
+      "description": "Mace with gravitational distortion effect"
+    }
+  ],
+  "totalItems": 250,
+  "version": "1.0",
+  "generatedDate": "2025-11-23",
+  "notes": "First 5 items shown as example. Full manifest contains all 250 items."
+}
