@@ -1,7 +1,9 @@
+using System.Runtime.CompilerServices;
+
 namespace Server;
 
 /// <summary>
-/// Base mobile (player/NPC) class with modern features
+/// Highly optimized mobile (player/NPC) class with delta batching and minimal allocations
 /// </summary>
 public class Mobile : IEntity
 {
@@ -12,18 +14,30 @@ public class Mobile : IEntity
     private int _hue;
     private Direction _direction;
 
+    // Delta batching for network optimization
+    private MobileDelta _pendingDeltas;
+    private bool _deltaQueued;
+
+    // Stats with change tracking
+    private int _hits;
+    private int _hitsMax;
+    private int _stam;
+    private int _stamMax;
+    private int _mana;
+    private int _manaMax;
+
     public Mobile()
     {
         Serial = World.NewMobileSerial();
-        _name = "Mobile";
+        _name = string.Intern("Mobile"); // Intern common names
         _bodyValue = 0x190; // Human male
         _map = Map.Felucca;
         _location = Point3D.Zero;
         _direction = Direction.North;
 
-        Hits = HitsMax = 100;
-        Stam = StamMax = 100;
-        Mana = ManaMax = 100;
+        _hits = _hitsMax = 100;
+        _stam = _stamMax = 100;
+        _mana = _manaMax = 100;
 
         World.AddEntity(this);
     }
@@ -35,9 +49,19 @@ public class Mobile : IEntity
     public string Name
     {
         get => _name;
-        set => _name = value ?? string.Empty;
+        set
+        {
+            var newName = string.IsNullOrEmpty(value) ? "Mobile" : value;
+            if (_name != newName)
+            {
+                // Intern common names to reduce memory
+                _name = newName.Length < 32 ? string.Intern(newName) : newName;
+                QueueDelta(MobileDelta.Properties);
+            }
+        }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Point3D Location
     {
         get => _location;
@@ -46,11 +70,12 @@ public class Mobile : IEntity
             if (_location != value)
             {
                 _location = value;
-                Delta(MobileDelta.Location);
+                QueueDelta(MobileDelta.Location);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Map Map
     {
         get => _map;
@@ -59,11 +84,12 @@ public class Mobile : IEntity
             if (_map != value)
             {
                 _map = value;
-                Delta(MobileDelta.Location);
+                QueueDelta(MobileDelta.Location);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public int Body
     {
         get => _bodyValue;
@@ -72,11 +98,12 @@ public class Mobile : IEntity
             if (_bodyValue != value)
             {
                 _bodyValue = value;
-                Delta(MobileDelta.Body);
+                QueueDelta(MobileDelta.Body);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public int Hue
     {
         get => _hue;
@@ -85,11 +112,12 @@ public class Mobile : IEntity
             if (_hue != value)
             {
                 _hue = value;
-                Delta(MobileDelta.Hue);
+                QueueDelta(MobileDelta.Hue);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Direction Direction
     {
         get => _direction;
@@ -98,23 +126,132 @@ public class Mobile : IEntity
             if (_direction != value)
             {
                 _direction = value;
-                Delta(MobileDelta.Direction);
+                QueueDelta(MobileDelta.Direction);
             }
         }
     }
 
-    // Stats
-    public int Hits { get; set; }
-    public int HitsMax { get; set; }
-    public int Stam { get; set; }
-    public int StamMax { get; set; }
-    public int Mana { get; set; }
-    public int ManaMax { get; set; }
+    // Optimized stats with change tracking
+    public int Hits
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get => _hits;
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        set
+        {
+            if (_hits != value)
+            {
+                _hits = Math.Clamp(value, 0, _hitsMax);
+                QueueDelta(MobileDelta.Hits);
+            }
+        }
+    }
 
-    // Skills (modern with Span<T> for performance)
+    public int HitsMax
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get => _hitsMax;
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        set
+        {
+            if (_hitsMax != value)
+            {
+                _hitsMax = Math.Max(1, value);
+                _hits = Math.Min(_hits, _hitsMax);
+                QueueDelta(MobileDelta.Stats);
+            }
+        }
+    }
+
+    public int Stam
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get => _stam;
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        set
+        {
+            if (_stam != value)
+            {
+                _stam = Math.Clamp(value, 0, _stamMax);
+                QueueDelta(MobileDelta.Stam);
+            }
+        }
+    }
+
+    public int StamMax
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get => _stamMax;
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        set
+        {
+            if (_stamMax != value)
+            {
+                _stamMax = Math.Max(1, value);
+                _stam = Math.Min(_stam, _stamMax);
+                QueueDelta(MobileDelta.Stats);
+            }
+        }
+    }
+
+    public int Mana
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get => _mana;
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        set
+        {
+            if (_mana != value)
+            {
+                _mana = Math.Clamp(value, 0, _manaMax);
+                QueueDelta(MobileDelta.Mana);
+            }
+        }
+    }
+
+    public int ManaMax
+    {
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        get => _manaMax;
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        set
+        {
+            if (_manaMax != value)
+            {
+                _manaMax = Math.Max(1, value);
+                _mana = Math.Min(_mana, _manaMax);
+                QueueDelta(MobileDelta.Stats);
+            }
+        }
+    }
+
+    // Skills (modern with Span<T> for zero-allocation access)
     private readonly int[] _skills = new int[58];
 
     public Span<int> Skills => _skills;
+
+    // Batch delta updates to reduce network traffic
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private void QueueDelta(MobileDelta delta)
+    {
+        _pendingDeltas |= delta;
+
+        if (!_deltaQueued)
+        {
+            _deltaQueued = true;
+            World.QueueMobileDelta(this);
+        }
+    }
+
+    internal void ProcessDeltas()
+    {
+        if (_pendingDeltas != MobileDelta.None)
+        {
+            Delta(_pendingDeltas);
+            _pendingDeltas = MobileDelta.None;
+            _deltaQueued = false;
+        }
+    }
 
     public virtual void Delete()
     {
@@ -151,20 +288,33 @@ public class Mobile : IEntity
     {
         from.SendMessage(Name);
     }
+
+    public virtual void Resurrect()
+    {
+        if (Hits > 0)
+            return;
+
+        Hits = HitsMax;
+        Stam = StamMax;
+        Mana = ManaMax;
+
+        SendMessage("You have been resurrected!");
+    }
 }
 
 [Flags]
 public enum MobileDelta
 {
-    None = 0x00,
-    Location = 0x01,
-    Body = 0x02,
-    Hue = 0x04,
-    Direction = 0x08,
-    Stats = 0x10,
-    Hits = 0x20,
-    Stam = 0x40,
-    Mana = 0x80
+    None = 0x0000,
+    Location = 0x0001,
+    Body = 0x0002,
+    Hue = 0x0004,
+    Direction = 0x0008,
+    Stats = 0x0010,
+    Hits = 0x0020,
+    Stam = 0x0040,
+    Mana = 0x0080,
+    Properties = 0x0100
 }
 
 public enum Direction : byte

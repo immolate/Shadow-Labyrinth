@@ -1,9 +1,10 @@
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace Server;
 
 /// <summary>
-/// Core server functionality with modern async/await patterns
+/// Highly optimized core server functionality with modern async/await patterns
 /// </summary>
 public static class Core
 {
@@ -11,9 +12,18 @@ public static class Core
     private static readonly CancellationTokenSource _cts = new();
     private static Task? _mainLoop;
 
+    // Performance tracking
+    private static long _tickCount;
+    private static readonly Stopwatch _uptimeWatch = new();
+
     public static bool IsRunning => _running;
     public static DateTime StartTime { get; private set; }
-    public static TimeSpan UpTime => DateTime.UtcNow - StartTime;
+    public static TimeSpan UpTime => _uptimeWatch.Elapsed;
+    public static long TickCount => Volatile.Read(ref _tickCount);
+
+    // Tick rate configuration (50 TPS = 20ms per tick)
+    private const int TargetTickMs = 20;
+    private const int TicksPerSecond = 50;
 
     public static void Initialize()
     {
@@ -32,6 +42,7 @@ public static class Core
         AppDomain.CurrentDomain.ProcessExit += OnProcessExit;
 
         StartTime = DateTime.UtcNow;
+        _uptimeWatch.Start();
 
         Console.WriteLine("Core initialized.");
     }
@@ -43,35 +54,57 @@ public static class Core
         _mainLoop.Wait();
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveOptimization)]
     private static async Task MainLoop()
     {
-        var sw = Stopwatch.StartNew();
         var lastAutoSave = DateTime.UtcNow;
+        var tickTimer = Stopwatch.StartNew();
+        long nextTick = TargetTickMs;
 
         while (_running && !_cts.Token.IsCancellationRequested)
         {
             try
             {
-                sw.Restart();
+                var startTick = tickTimer.ElapsedMilliseconds;
 
                 // Process timers
                 Timer.Slice();
 
-                // Auto-save check
-                if (Configuration.EnableAutoSave &&
-                    DateTime.UtcNow - lastAutoSave > Configuration.AutoSaveInterval)
+                // Process entity deltas (batched network updates)
+                World.ProcessDeltas();
+
+                // Increment tick counter
+                Interlocked.Increment(ref _tickCount);
+
+                // Auto-save check (only check every second to reduce overhead)
+                if (_tickCount % TicksPerSecond == 0)
                 {
-                    Console.WriteLine("Auto-saving...");
-                    World.Save();
-                    lastAutoSave = DateTime.UtcNow;
+                    var now = DateTime.UtcNow;
+                    if (Configuration.EnableAutoSave && now - lastAutoSave > Configuration.AutoSaveInterval)
+                    {
+                        Console.WriteLine("Auto-saving...");
+                        _ = Task.Run(World.Save); // Save async to not block main loop
+                        lastAutoSave = now;
+                    }
                 }
 
-                // Maintain 20ms tick rate (50 TPS)
-                var elapsed = sw.ElapsedMilliseconds;
-                if (elapsed < 20)
+                // Precise tick timing with spin-wait for last millisecond
+                var elapsed = tickTimer.ElapsedMilliseconds - startTick;
+                var remaining = TargetTickMs - elapsed;
+
+                if (remaining > 1)
                 {
-                    await Task.Delay(20 - (int)elapsed, _cts.Token);
+                    // Use Task.Delay for bulk of wait
+                    await Task.Delay((int)remaining - 1, _cts.Token);
                 }
+
+                // Spin-wait for precise timing on last millisecond
+                while (tickTimer.ElapsedMilliseconds < nextTick)
+                {
+                    Thread.SpinWait(10);
+                }
+
+                nextTick += TargetTickMs;
             }
             catch (OperationCanceledException)
             {

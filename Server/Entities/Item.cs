@@ -1,7 +1,9 @@
+using System.Runtime.CompilerServices;
+
 namespace Server;
 
 /// <summary>
-/// Base item class with modern C# features
+/// Highly optimized item class with delta batching and minimal allocations
 /// </summary>
 public class Item : IEntity
 {
@@ -11,6 +13,10 @@ public class Item : IEntity
     private int _amount;
     private int _hue;
     private int _itemId;
+
+    // Delta batching for network optimization
+    private ItemDelta _pendingDeltas;
+    private bool _deltaQueued;
 
     public Item(int itemId)
     {
@@ -28,6 +34,7 @@ public class Item : IEntity
     public Serial Serial { get; }
     public bool Deleted { get; private set; }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public int ItemId
     {
         get => _itemId;
@@ -36,7 +43,7 @@ public class Item : IEntity
             if (_itemId != value)
             {
                 _itemId = value;
-                Delta(ItemDelta.Properties);
+                QueueDelta(ItemDelta.Properties);
             }
         }
     }
@@ -46,14 +53,17 @@ public class Item : IEntity
         get => _name;
         set
         {
-            if (_name != value)
+            var newName = value ?? string.Empty;
+            if (_name != newName)
             {
-                _name = value ?? string.Empty;
-                Delta(ItemDelta.Properties);
+                // Intern common item names to reduce memory
+                _name = newName.Length < 32 ? string.Intern(newName) : newName;
+                QueueDelta(ItemDelta.Properties);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Point3D Location
     {
         get => _location;
@@ -62,11 +72,12 @@ public class Item : IEntity
             if (_location != value)
             {
                 _location = value;
-                Delta(ItemDelta.Location);
+                QueueDelta(ItemDelta.Location);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Map Map
     {
         get => _map;
@@ -75,11 +86,12 @@ public class Item : IEntity
             if (_map != value)
             {
                 _map = value;
-                Delta(ItemDelta.Location);
+                QueueDelta(ItemDelta.Location);
             }
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public int Amount
     {
         get => _amount;
@@ -88,7 +100,7 @@ public class Item : IEntity
             if (_amount != value)
             {
                 _amount = Math.Max(0, value);
-                Delta(ItemDelta.Properties);
+                QueueDelta(ItemDelta.Properties);
 
                 if (_amount == 0)
                     Delete();
@@ -96,6 +108,7 @@ public class Item : IEntity
         }
     }
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public int Hue
     {
         get => _hue;
@@ -104,12 +117,35 @@ public class Item : IEntity
             if (_hue != value)
             {
                 _hue = value;
-                Delta(ItemDelta.Properties);
+                QueueDelta(ItemDelta.Properties);
             }
         }
     }
 
     public Mobile? RootParent { get; set; }
+
+    // Batch delta updates to reduce network traffic
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    private void QueueDelta(ItemDelta delta)
+    {
+        _pendingDeltas |= delta;
+
+        if (!_deltaQueued)
+        {
+            _deltaQueued = true;
+            World.QueueItemDelta(this);
+        }
+    }
+
+    internal void ProcessDeltas()
+    {
+        if (_pendingDeltas != ItemDelta.None)
+        {
+            Delta(_pendingDeltas);
+            _pendingDeltas = ItemDelta.None;
+            _deltaQueued = false;
+        }
+    }
 
     public virtual void Delete()
     {
