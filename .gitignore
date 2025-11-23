@@ -19,3 +19,39 @@ Thumbs.db
 .vs/
 bin/
 obj/
+
+# .NET 8.0 specific
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Server runtime files
+config.json
+Saves/
+Backups/
+Logs/
+
+# Build artifacts
+*.dll
+*.pdb
+!Server/bin/**/*.dll
+!Scripts/bin/**/*.dll
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Database files
+*.db
+*.sqlite
+*.dat
